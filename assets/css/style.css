@@ -1,26 +1,81 @@
 /***********************************
+COLORS
+#E82222
+#EEEEEE
+#9C9FAD
+#373B42
+#b11a1a
+***********************************/
+body {
+  color: #373b42;
+}
+p {
+  margin: 0;
+}
+/***********************************
 NAVIGATION
 ***********************************/
-
+.navigation {
+  background-color: #373b42;
+  padding: 0.5rem 1.5rem;
+}
+.navbar-brand {
+  color: #ffffff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.75rem;
+}
+.icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
 /***********************************
 HEADER
 ***********************************/
 .header {
-  background-image: url(../images/tomas-anton-escobar-PHyF2mCMei0-unsplash.jpg);
+  background-image: linear-gradient(#ffffff80, #ffffff80),
+    url(../images/tomas-anton-escobar-PHyF2mCMei0-unsplash.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  height: 50vw;
+  height: 35vw;
 }
 /***********************************
 ADD TRAIN
 ***********************************/
 .add-train {
+  margin: 20px auto;
+}
+.card {
+  border: 1px solid #373b42;
+}
+.card-header {
+  background-color: #373b42;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.btn {
+  background-color: #e82222;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1.5px 1.5px #b11a1a;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 /***********************************
 CURRENT TRAIN SCHEDULE
 ***********************************/
 .train-schedule {
+  margin: 0 auto 70px;
 }
 /***********************************
 FOOTER
 ***********************************/
+.footer {
+  background-color: #eeeeee;
+  height: 50px;
+}
+.copyright {
+  font-size: 0.75rem;
+}

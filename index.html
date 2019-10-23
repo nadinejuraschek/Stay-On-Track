@@ -15,107 +15,115 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <i class="fas fa-subway"></i>
-        Stay On Track
-      </a>
-    </nav>
-
-    <!-- HEADER -->
     <div class="jumbotron-fluid header">
+      <nav class="navbar navigation">
+        <p class="navbar-brand" href="#">
+          <i class="fas fa-subway icon"></i>
+          Stay On Track
+        </p>
+      </nav>
+
+      <!-- HEADER -->
       <h1></h1>
     </div>
 
     <!-- ADD TRAIN -->
-    <div class="card add-train">
-      <div class="card-header">
-        Track a Train
-      </div>
-      <div class="card-body">
-        <form>
-          <div class="form-group">
-            <label for="train-name">Train Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="train-name"
-              placeholder="Train Name"
-            />
-          </div>
-          <div class="form-group">
-            <label for="destination">Destination</label>
-            <input
-              type="text"
-              class="form-control"
-              id="destination"
-              placeholder="Destination"
-            />
-          </div>
-          <div class="form-group">
-            <label for="first-time">First Train Time</label>
-            <input
-              type="text"
-              class="form-control"
-              id="first-time"
-              placeholder="First Train Time"
-            />
-          </div>
-          <div class="form-group">
-            <label for="frequency">Frequency (min)</label>
-            <input
-              type="text"
-              class="form-control"
-              id="frequency"
-              placeholder="Frequency"
-            />
-          </div>
-          <button type="submit" class="btn btn-primary">Add Train</button>
-        </form>
+    <div class="container add-train">
+      <div class="card">
+        <div class="card-header">
+          Track a Train
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="train-name">Train Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="train-name"
+                placeholder="Train Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="destination">Destination</label>
+              <input
+                type="text"
+                class="form-control"
+                id="destination"
+                placeholder="Destination"
+              />
+            </div>
+            <div class="form-group">
+              <label for="first-time">First Train Time</label>
+              <input
+                type="text"
+                class="form-control"
+                id="first-time"
+                placeholder="First Train Time"
+              />
+            </div>
+            <div class="form-group">
+              <label for="frequency">Frequency (min)</label>
+              <input
+                type="text"
+                class="form-control"
+                id="frequency"
+                placeholder="Frequency"
+              />
+            </div>
+            <button type="submit" class="btn">Add Train</button>
+          </form>
+        </div>
       </div>
     </div>
 
     <!-- CURRENT TRAIN SCHEDULE -->
-    <div class="card train-schedule">
-      <div class="card-header">
-        Current Train Schedule
-      </div>
-      <div class="card-body">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Train Name</th>
-              <th scope="col">Destination</th>
-              <th scope="col">Frequency (min)</th>
-              <th scope="col">Next Arrival</th>
-              <th scope="col">Minutes Away</th>
-            </tr>
-          </thead>
-          <tbody class="table-hover">
-            <tr>
-              <th scope="row"></th>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row"></th>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row"></th>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="container train-schedule">
+      <div class="card">
+        <div class="card-header">
+          Current Train Schedule
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody class="table-hover">
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
     <!-- FOOTER -->
-    <nav class="navbar fixed-bottom navbar-light bg-light">
-      <a class="navbar-brand" href="#">Fixed bottom</a>
+    <nav class="navbar fixed-bottom footer">
+      <p class="copyright">® 2019</p>
     </nav>
 
     <!-- FONTAWESOME -->
