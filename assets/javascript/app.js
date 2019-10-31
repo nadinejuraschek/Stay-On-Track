@@ -1,18 +1,17 @@
 /***********************************
+DOT ENV
+***********************************/
+require('dotenv').config();
+console.log(process.env);
+
+/***********************************
 FIREBASE
 ***********************************/
 // Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyComNTXNIOun4VV90ifLnBI2ygZHxOTBTk",
-    authDomain: "train-scheduler-cf00f.firebaseapp.com",
-    databaseURL: "https://train-scheduler-cf00f.firebaseio.com",
-    projectId: "train-scheduler-cf00f",
-    storageBucket: "train-scheduler-cf00f.appspot.com",
-    messagingSenderId: "1084784664653",
-    appId: "1:1084784664653:web:bdbf0d4ff556fde7a7bc04"
-};
+var config = process.env.config;
+
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config);
 
 // set up database
 var database = firebase.database();
