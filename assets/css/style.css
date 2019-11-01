@@ -39,6 +39,8 @@ HEADER
   background-size: cover;
   height: 25vw;
 }
+#current-time {
+}
 /***********************************
 ADD TRAIN
 ***********************************/
@@ -55,13 +57,17 @@ ADD TRAIN
   text-transform: uppercase;
 }
 .btn {
-  background-color: #e82222;
-  border: none;
+  background-color: #ffd2d2;
+  border: 2px solid #e82222;
   border-radius: 10px;
   box-shadow: 1.5px 1.5px #b11a1a;
-  color: #ffffff;
+  color: #e82222;
   font-weight: 600;
   text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #e82222;
+  color: #ffffff;
 }
 /***********************************
 CURRENT TRAIN SCHEDULE
