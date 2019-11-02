@@ -93,6 +93,9 @@ FOOTER
 .footer {
   background-color: #eeeeee;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .copyright {
   font-size: 0.75rem;
