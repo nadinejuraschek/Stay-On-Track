@@ -36,6 +36,10 @@ $(document).ready(function () {
     /***********************************
     MAIN CODE
     ***********************************/
+    // display current time
+    var currentTimeDisplay = moment().format("hh:mm");
+    $("#current-time").text(currentTimeDisplay);
+
     // add train button click
     $("#add-btn").on("click", function (event) {
         // keep button from submitting form 
