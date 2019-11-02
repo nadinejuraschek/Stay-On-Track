@@ -17,6 +17,7 @@ NAVIGATION
 ***********************************/
 .navigation {
   background-color: #373b42;
+  height: 5vw;
   padding: 0.5rem 1.5rem;
 }
 .navbar-brand {
@@ -32,12 +33,25 @@ NAVIGATION
 HEADER
 ***********************************/
 .header {
-  background-image: linear-gradient(#ffffff80, #ffffff80),
+  background-image: linear-gradient(#ffffff90, #ffffff90),
     url(../images/tomas-anton-escobar-PHyF2mCMei0-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 25vw;
+}
+
+.picture-clock {
+  height: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#current-time {
+  color: #373b42;
+  font-size: 8rem;
+  text-align: center;
 }
 /***********************************
 ADD TRAIN
@@ -55,13 +69,17 @@ ADD TRAIN
   text-transform: uppercase;
 }
 .btn {
-  background-color: #e82222;
-  border: none;
+  background-color: #ffd2d2;
+  border: 2px solid #e82222;
   border-radius: 10px;
   box-shadow: 1.5px 1.5px #b11a1a;
-  color: #ffffff;
+  color: #e82222;
   font-weight: 600;
   text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #e82222;
+  color: #ffffff;
 }
 /***********************************
 CURRENT TRAIN SCHEDULE
