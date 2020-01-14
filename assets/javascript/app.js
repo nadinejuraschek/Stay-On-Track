@@ -34,11 +34,19 @@ $(document).ready(function () {
     var minutesAway = "";
 
     /***********************************
+    FUNCTIONS
+    ***********************************/
+    function getTime() {
+        var currentTimeDisplay = moment().format("hh:mm");
+        $("#current-time").text(currentTimeDisplay);
+        setTimeout(currentTimeDisplay, 1000);
+    }
+
+    /***********************************
     MAIN CODE
     ***********************************/
     // display current time
-    var currentTimeDisplay = moment().format("hh:mm");
-    $("#current-time").text(currentTimeDisplay);
+    getTime();
 
     // add train button click
     $("#add-btn").on("click", function (event) {
@@ -95,7 +103,7 @@ $(document).ready(function () {
         console.log("Calculated Next Arrival: " + nextArrival);
 
         // add new table row
-        var tr = $("<tr>");
+        var tr = $("<tr class=''>");
         tr.append($("<td>" + childSnapshot.val().trainName + "</td>"));
         tr.append($("<td>" + childSnapshot.val().destination + "</td>"));
         tr.append($("<td>" + childSnapshot.val().frequency + "</td>"));
@@ -108,4 +116,7 @@ $(document).ready(function () {
         console.log("Errors handled: " + errorObject.code);
     });
 
+    setInterval(function () {
+        window.location.reload();
+    }, 60000);
 });
