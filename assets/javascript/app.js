@@ -119,4 +119,10 @@ $(document).ready(function () {
     setInterval(function () {
         window.location.reload();
     }, 60000);
+
+    /***********************************
+    CURRENT YEAR
+    ***********************************/
+    const year = new Date().getFullYear();
+    $("#currentYear").html(year);
 });

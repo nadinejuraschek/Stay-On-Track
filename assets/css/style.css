@@ -17,16 +17,16 @@ NAVIGATION
 ***********************************/
 .navigation {
   background-color: #373b42;
-  height: 5vw;
+  height: 4vw;
   padding: 0.5rem 1.5rem;
 }
 .navbar-brand {
   color: #ffffff;
   font-family: "Varela Round", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 .icon {
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin-right: 1rem;
 }
 /***********************************
@@ -38,7 +38,7 @@ HEADER
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 25vw;
+  height: 24vw;
 }
 
 .picture-clock {
@@ -57,7 +57,7 @@ HEADER
 ADD TRAIN
 ***********************************/
 .add-train {
-  margin: 1rem auto;
+  margin: 0.8rem auto;
 }
 .card {
   border: 1px solid #373b42;
@@ -94,7 +94,7 @@ ADD TRAIN
 CURRENT TRAIN SCHEDULE
 ***********************************/
 .train-schedule {
-  margin: 1rem auto;
+  margin: 0.8rem auto;
 }
 /***********************************
 FOOTER
@@ -108,4 +108,11 @@ FOOTER
 }
 .copyright {
   font-size: 0.75rem;
+}
+.footer a {
+  color: #373b42;
+}
+.footer a:hover {
+  color: #e82222;
+  text-decoration: none;
 }
